@@ -1,0 +1,67 @@
+:root {
+  --clr-natural-100: hsl(0 0% 100%);
+  --clr-natural-300: hsl(212 45% 89%);
+  --clr-primary-500: hsl(220 15% 55%);
+  --clr-primary-700: hsl(218 44% 22%);
+
+  --fs-body: 15px;
+
+  --ff-normal: 'Outfit', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100svh;
+  font-family: var(--ff-normal);
+  font-size: var(--fs-body);
+  background: var(--clr-natural-300);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 1rem;
+  margin-inline: auto;
+}
+
+.demo-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--clr-natural-100);
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 300px;
+}
+
+.card_image_wrapper {
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card__title {
+  text-align: center;
+  color: var(--clr-primary-700);
+}
+
+.card__description {
+  text-align: center;
+  color: var(--clr-primary-500);
+}
